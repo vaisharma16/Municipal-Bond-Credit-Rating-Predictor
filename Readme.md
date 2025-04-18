@@ -1,4 +1,3 @@
-```markdown
 # 🏦 Municipal Bond Credit Rating Predictor
 
 ## 📌 Overview
@@ -112,9 +111,11 @@ streamlit run app.py
 
 ---
 📈 Explainability with SHAP
+
 SHAP (SHapley Additive exPlanations) is a powerful framework based on game theory that helps interpret the output of machine learning models.
 
 🔍 Why SHAP in This Project?
+
 Credit rating predictions impact financial decisions, so model transparency is crucial.
 
 SHAP helps explain how much each feature contributed to a bond's predicted rating.
@@ -144,10 +145,13 @@ Plays nicely with SHAP for model explainability
 Robust against overfitting (with enough trees)
 
 🔁 Alternatives Considered:
+
 Algorithm	Notes
-Logistic Regression	Too simple, assumes linearity — misses feature interactions
-Decision Trees	Easy to interpret but prone to overfitting
-XGBoost / LightGBM	More powerful, but adds complexity and less interpretability
+1. Logistic Regression	Too simple, assumes linearity — misses feature interactions
+2. Decision Trees	Easy to interpret but prone to overfitting
+3. XGBoost / LightGBM	More powerful, but adds complexity and less interpretability
+
+
 We chose Random Forest as the best balance between accuracy, speed, and interpretability.
 
 ---
